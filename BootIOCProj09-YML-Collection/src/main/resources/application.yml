@@ -1,0 +1,25 @@
+spring: 
+   application: 
+      name: BootIOCProj05-SPEL
+
+#Indexed syntax
+org: 
+   company: 
+      companyNames: 
+         - WIPRO
+         - TCS
+         - HCL
+         - COGNIZANT
+
+#Inline syntax
+      location: Coimbatore,Chennai,Bangalore,Hyderabad
+
+      colors: Red,Green,Orange,Purple
+
+      phone: 9668453230,7077687097,9661017274,977365903
+
+      pindcode: 
+         coimbatore: 641004
+         chennai: 641012
+         bangalore: 768045
+         hyderabad: 892379

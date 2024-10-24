@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: BootIOCProj13-Profile
+  profiles:
+    active: dev
+    
+---
+spring:
+  config: 
+     activate: 
+        on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bikashdb
+    username: root
+    password: root
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+    
+---
+spring:
+  config: 
+      activate: 
+        on-profile: prod
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: root  
+    
+---
+spring:
+  config: 
+      activate: 
+        on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bikashdb
+    username: root
+    password: root
+    type: org.apache.commons.dbcp2.BasicDataSource
+    
+---    
+spring:  
+  config: 
+      activate: 
+        on-profile: uat    
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: root
+    type: org.apache.tomcat.jdbc.pool.DataSource    
+      
+    

@@ -1,0 +1,29 @@
+spring: 
+   application: 
+      name: BootIOCProj05-SPEL
+
+#Configura custome yml file
+   config: 
+      import: myfile.yml
+
+#Hotel Menu Details
+org: 
+   hotel: 
+      idli: 10.0
+      dosa: 20.0
+      samosa: 12.0
+      bada: 12.0
+      puri: 15.0
+
+#Hotel Details
+      name: BGH Stop
+      address: Bargarh
+      mblno: 9668453230     
+      
+
+#Extra Details 
+      capacity: 100
+
+
+
+

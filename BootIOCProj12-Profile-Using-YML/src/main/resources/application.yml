@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: BootIOCProj12-Profile
+  profiles:
+    active: prod

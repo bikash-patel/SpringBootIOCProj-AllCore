@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: BootIOCProj12-Profile
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bikashdb
+    username: root
+    password: root
+    type: org.apache.commons.dbcp2.BasicDataSource
